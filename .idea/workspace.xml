@@ -2,16 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6dc14968-7c56-4d21-9042-6fab25c97728" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/scala/com/dream/prneditor/MainApp.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/dream/prneditor/MainApp.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.12/classes/com/dream/prneditor/MainApp$.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/classes/com/dream/prneditor/MainApp$.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.12/classes/com/dream/prneditor/MainApp$InvItem$.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/classes/com/dream/prneditor/MainApp$InvItem$.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.12/classes/com/dream/prneditor/MainApp$InvItem.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/classes/com/dream/prneditor/MainApp$InvItem.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.12/classes/com/dream/prneditor/MainApp$Invoice$.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/classes/com/dream/prneditor/MainApp$Invoice$.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.12/classes/com/dream/prneditor/MainApp$Invoice.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/classes/com/dream/prneditor/MainApp$Invoice.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.12/classes/com/dream/prneditor/MainApp$lineReading$.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/classes/com/dream/prneditor/MainApp$lineReading$.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.12/classes/com/dream/prneditor/MainApp$lineReading.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/classes/com/dream/prneditor/MainApp$lineReading.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.12/classes/com/dream/prneditor/MainApp.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/classes/com/dream/prneditor/MainApp.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -55,8 +46,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/scala/com/dream/prneditor/MainApp.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="375">
-              <caret line="227" column="91" selection-start-line="227" selection-start-column="91" selection-end-line="227" selection-end-column="91" />
+            <state relative-caret-position="136">
+              <caret line="131" column="82" selection-start-line="131" selection-start-column="82" selection-end-line="131" selection-end-column="82" />
             </state>
           </provider>
         </entry>
@@ -296,7 +287,7 @@
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="DB Execution Console" />
       <window_info anchor="bottom" id="sbt-shell-toolwindow" weight="0.44637054" />
-      <window_info anchor="bottom" id="Terminal" weight="0.4182015" />
+      <window_info anchor="bottom" id="Terminal" weight="0.5146262" />
       <window_info anchor="bottom" id="Event Log" side_tool="true" />
       <window_info anchor="bottom" id="Statistic" />
       <window_info anchor="bottom" id="Build" weight="0.45287108" />
@@ -305,7 +296,7 @@
       <window_info anchor="bottom" id="Console" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.4767064" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.2990249" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.45503792" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -443,8 +434,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/scala/com/dream/prneditor/MainApp.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="227" column="91" selection-start-line="227" selection-start-column="91" selection-end-line="227" selection-end-column="91" />
+        <state relative-caret-position="136">
+          <caret line="131" column="82" selection-start-line="131" selection-start-column="82" selection-end-line="131" selection-end-column="82" />
         </state>
       </provider>
     </entry>

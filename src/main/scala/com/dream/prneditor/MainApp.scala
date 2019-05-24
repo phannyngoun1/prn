@@ -129,7 +129,7 @@ object MainApp {
 
     value.split("####")
       .filter(_.contains(field.detectName))
-      .headOption.map( v => FieldValue(field, v.replace(field.detectName,"").trim))
+      .headOption.map( v => FieldValue(field, v.replace(field.detectName,"").trim.replaceAll(" +", " ")))
       .headOption
   }
 
@@ -165,6 +165,21 @@ object MainApp {
 
   }
 
+  def preview(invoiceNo: String, list: List[LineReading]) = {
+
+    println(s"Invoice ----------------------------------")
+    list.map( item => {
+      println(s"### ${item}")
+      filedList
+        .filter(_.fromSingleLine)
+        .map(field =>  readField(field, item.lineText))
+        .filter(_.isDefined)
+        .map(item => println( s"===> ${item}"))
+
+    })
+    (invoiceNo: String, list: List[LineReading])
+  }
+
 
   def main(args: Array[String]): Unit = {
 
@@ -194,16 +209,7 @@ object MainApp {
 
       }).toList.groupBy(_.invoiceNo)
       .map(line => {
-        println(s"Invoice ----------------------------------")
-          line._2.map( item => {
-            println(s"### ${item}")
-            filedList
-              .filter(_.fromSingleLine)
-              .map(field =>  readField(field, item.lineText))
-              .filter(_.isDefined)
-              .map(item => println( s"===> ${item}"))
-
-          })
+        preview(line._1, line._2)
         line
       })
       .map( item => {
@@ -225,14 +231,26 @@ object MainApp {
     for (line <- reader ) {
       println(
         s""""
+          |##Invoice
+          |
           |Invoice No: ${line.fields.filter(_.field == invoiceNo).headOption.map(_.value).getOrElse("N/A")}
+          |Bill To: ${line.fields.filter(_.field == billTo).headOption.map(_.value).getOrElse("N/A")}
           |
-          |
-          |
-          |
+          |##Line Items
+          |${printLineItem(line.lineITemFields).mkString("\n")}
           |
         """.stripMargin)
     }
   }
 
+  def printLineItem(list: List[InvoiceItemField]) = {
+
+    list.sortBy(_.seq).zipWithIndex
+      .map(item => s" ${item._2} ==> ${item._1.list.filter(_.field == lineItem).headOption.map(_.value).getOrElse("N/A")},  " +
+      s"${item._1.list.filter(_.field == lineItemDesc).headOption.map(_.value).getOrElse("N/A")}, " +
+      s"${item._1.list.filter(_.field == qty).headOption.map(_.value).getOrElse("N/A")}, " +
+      s"${item._1.list.filter(_.field == amount).headOption.map(_.value).getOrElse("N/A")}")
+
+
+  }
 }
